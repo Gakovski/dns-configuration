@@ -1,0 +1,16 @@
+;
+; BIND reverse data file for db.168.192.in-addr.arpa zone
+;
+$TTL	604800
+@	IN	SOA	ns1.administracijalab.local. admin.administracijalab.local. (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	ns1.administracijalab.local.
+
+10	IN	PTR	ns1.administracijalab.local.
+11	IN	PTR	dhcp.administracijalab.local.
+15	IN	PTR	web.administracijalab.local.

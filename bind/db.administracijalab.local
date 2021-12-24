@@ -1,0 +1,18 @@
+;
+; BIND data file for administracijalab.local zone
+;
+$TTL	604800
+@	IN	SOA	ns1.administracijalab.local. admin.administracijalab.local. (
+			      3		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	ns1.administracijalab.local.
+
+ns1	IN	A	192.168.0.10
+dhcp	IN	A	192.168.0.11
+fw1	IN	A	192.168.2.179
+web	IN	A	192.168.0.15	
+aws	IN	A	3.14.255.143
