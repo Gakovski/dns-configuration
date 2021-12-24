@@ -6,12 +6,12 @@
 // organization
 //include "/etc/bind/zones.rfc1918";
 
-zone "administracijalab.local" {
-	type master;
-	file "/etc/bind/db.administracijalab.local";
-};
-
-zone "168.192.in-addr.arpa" {
+zone "168.192.in-addr.arpa" IN {
 	type master;
 	file "/etc/bind/db.168.192";
+};
+
+zone "gakovski.students.finki.ukim.mk" IN {
+	type master;
+	file "/etc/bind/db.gakovski";
 };

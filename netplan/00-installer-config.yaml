@@ -9,5 +9,5 @@ network:
         addresses:
         - 127.0.0.1
         search:
-        - administracijalab.local
+        - gakovski.students.finki.ukim.mk
   version: 2
