@@ -10,9 +10,9 @@ $TTL	604800
 			 604800 )	; Negative Cache TTL
 ;
 @	IN	NS	ns1.gakovski.students.finki.ukim.mk.
+@	IN	NS	ns2.gakovski.students.finki.ukim.mk.
 
-ns1	IN	A	192.168.0.10
-dhcp	IN	A	192.168.0.11
-fw1	IN	A	192.168.2.179
+ns2	IN	A	192.168.0.250
+ns1	IN	A	192.168.0.250
 web	IN	A	192.168.0.15	
 aws	IN	A	3.14.255.143

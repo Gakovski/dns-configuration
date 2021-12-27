@@ -11,6 +11,5 @@ $TTL	604800
 ;
 @	IN	NS	ns1.gakovski.students.finki.ukim.mk.
 
-10	IN	PTR	ns1.gakovski.students.finki.ukim.mk.
-11	IN	PTR	dhcp.gakovski.students.finki.ukim.mk.
+250	IN	PTR	ns1.gakovski.students.finki.ukim.mk.
 15	IN	PTR	web.gakovski.students.finki.ukim.mk.
