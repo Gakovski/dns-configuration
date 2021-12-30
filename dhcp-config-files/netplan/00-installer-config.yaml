@@ -1,0 +1,13 @@
+# This is the network config written by 'subiquity'
+network:
+  ethernets:
+    enp0s3:
+      addresses:
+      - 192.168.0.251/24
+      gateway4: 192.168.0.1
+      nameservers:
+        addresses:
+        - 192.168.0.250
+        search:
+        - gakovski.students.finki.ukim.mk
+  version: 2

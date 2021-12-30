@@ -1,15 +1,20 @@
 ;
-; BIND reverse data file for db.168.192.in-addr.arpa zone
+; BIND data file for gakovski.finki.ukim.mk zone
 ;
 $TTL	604800
 @	IN	SOA	ns1.gakovski.students.finki.ukim.mk. admin.gakovski.students.finki.ukim.mk. (
-			      2		; Serial
+			      3		; Serial
 			 604800		; Refresh
 			  86400		; Retry
 			2419200		; Expire
 			 604800 )	; Negative Cache TTL
 ;
 @	IN	NS	ns1.gakovski.students.finki.ukim.mk.
+@	IN	NS	ns2.gakovski.students.finki.ukim.mk.
 
-250	IN	PTR	ns1.gakovski.students.finki.ukim.mk.
-15	IN	PTR	web.gakovski.students.finki.ukim.mk.
+ns2	IN	A	192.168.0.250
+ns1	IN	A	192.168.0.250
+dhcp	IN	A	192.168.0.251
+web	IN	A	192.168.0.26	
+aws	IN	A	3.14.255.143
+www	IN	CNAME	web
