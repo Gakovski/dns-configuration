@@ -1,0 +1,34 @@
+Firewall rules for DNS server
+david@ns1:~$ sudo ufw status
+Status: active
+
+To                         Action      From
+--                         ------      ----
+22                         ALLOW       Anywhere
+53                         ALLOW       Anywhere
+22 (v6)                    ALLOW       Anywhere (v6)
+53 (v6)                    ALLOW       Anywhere (v6)
+-------------------------------------------------------
+Firewall rules for DHCP server
+david@dhcp:~$ sudo ufw status
+Status: active
+
+To                         Action      From
+--                         ------      ----
+22                         ALLOW       Anywhere
+67/udp                     ALLOW       Anywhere
+68/udp                     ALLOW       Anywhere
+22 (v6)                    ALLOW       Anywhere (v6)
+67/udp (v6)                ALLOW       Anywhere (v6)
+68/udp (v6)                ALLOW       Anywhere (v6)
+-------------------------------------------------------
+Firewall rules for Apache webserver
+david@webserver1:~$ sudo ufw status
+Status: active
+
+To                         Action      From
+--                         ------      ----
+80/tcp                     ALLOW       Anywhere
+22/tcp                     ALLOW       Anywhere
+80/tcp (v6)                ALLOW       Anywhere (v6)
+22/tcp (v6)                ALLOW       Anywhere (v6)
